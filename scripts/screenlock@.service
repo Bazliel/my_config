@@ -2,7 +2,6 @@
 Description=Lock X session using betterlockscreen for user %i
 After=sleep.target
 After=suspend.target
-After=hibernate.target
 
 [Service]
 User=%i
@@ -14,4 +13,4 @@ TimeoutSec=infinity
 [Install]
 WantedBy=sleep.target
 WantedBy=suspend.target
-WantedBy=hibernate.target
+
