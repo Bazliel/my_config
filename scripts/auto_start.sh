@@ -2,5 +2,5 @@
 
 lxsession &
 nitrogen --restore &
-compton -b --config ~/.config/compton/compton.conf &
+picom -b --config ~/.config/picom/picom.conf &
 xss-lock -n ~/scripts/dim_screen.sh -- i3lock-fancy -f Quicksand &

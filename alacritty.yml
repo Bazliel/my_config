@@ -359,32 +359,32 @@ schemes:
 
 # Choose ONE color scheme from those available in the above list.
 colors:
-  name: Atelierforest (dark)
-  author: Chris Kempson
+  # Default colors
   primary:
-    background: "#1b1918"
-    foreground: "#a8a19f"
-  cursor:
-    text: "#1b1918"
-    cursor: "#a8a19f"
+    background: '#0A0E14'
+    foreground: '#B3B1AD'
+
+  # Normal colors
   normal:
-    black: "#1b1918"
-    red: "#f22c40"
-    green: "#5ab738"
-    yellow: "#d5911a"
-    blue: "#407ee7"
-    magenta: "#6666ea"
-    cyan: "#00ad9c"
-    white: "#a8a19f"
+    black: '#01060E'
+    red: '#EA6C73'
+    green: '#91B362'
+    yellow: '#F9AF4F'
+    blue: '#53BDFA'
+    magenta: '#FAE994'
+    cyan: '#90E1C6'
+    white: '#C7C7C7'
+
+  # Bright colors
   bright:
-    black: "#766e6b"
-    red: "#f22c40"
-    green: "#5ab738"
-    yellow: "#d5911a"
-    blue: "#407ee7"
-    magenta: "#6666ea"
-    cyan: "#00ad9c"
-    white: "#f1efee"
+    black: '#686868'
+    red: '#F07178'
+    green: '#C2D94C'
+    yellow: '#FFB454'
+    blue: '#59C2FF'
+    magenta: '#FFEE99'
+    cyan: '#95E6CB'
+    white: '#FFFFFF'
 
 # Visual Bell
 #
@@ -423,97 +423,98 @@ background_opacity: 1.0
 #save_to_clipboard: false
 # Allow terminal applications to change Alacritty's window title.
 #dynamic_title: true
-#cursor:
-# Cursor style
-#
-# Values for `style`:
-#   - ▇ Block
-#   - _ Underline
-#   - | Beam
-style: Underline
-# If this is `true`, the cursor will be rendered as a hollow box when the
-# window is not focused.
-#unfocused_hollow: true
-# Live config reload (changes require restart)
-#live_config_reload: true
-# Shell
-#
-# You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
-# Entries in `shell.args` are passed unmodified as arguments to the shell.
-#
-# Default:
-#   - (macOS) /bin/bash --login
-#   - (Linux/BSD) user login shell
-#   - (Windows) powershell
-#shell:
-#  program: /bin/bash
-#  args:
-#    - --login
-# Startup directory
-#
-# Directory the shell is started in. If this is unset, or `None`, the working
-# directory of the parent process will be used.
-#working_directory: None
-# WinPTY backend (Windows only)
-#
-# Alacritty defaults to using the newer ConPTY backend if it is available,
-# since it resolves a lot of bugs and is quite a bit faster. If it is not
-# available, the the WinPTY backend will be used instead.
-#
-# Setting this option to `true` makes Alacritty use the legacy WinPTY backend,
-# even if the ConPTY backend is available.
-#winpty_backend: false
-# Send ESC (\x1b) before characters when alt is pressed.
-#alt_send_esc: true
-#debug:
-# Display the time it takes to redraw each frame.
-#render_timer: false
-# Keep the log file after quitting Alacritty.
-#persistent_logging: false
-# Log level
-#
-# Values for `log_level`:
-#   - None
-#   - Error
-#   - Warn
-#   - Info
-#   - Debug
-#   - Trace
-#log_level: Warn
-# Print all received window events.
-#print_events: false
-# Record all characters and escape sequences as test data.
-#ref_test: false
-#mouse:
-# Click settings
-#
-# The `double_click` and `triple_click` settings control the time
-# alacritty should wait for accepting multiple clicks as one double
-# or triple click.
-#double_click: { threshold: 300 }
-#triple_click: { threshold: 300 }
-# If this is `true`, the cursor is temporarily hidden when typing.
-#hide_when_typing: false
-#url:
-# URL launcher
-#
-# This program is executed when clicking on a text which is recognized as a URL.
-# The URL is always added to the command as the last parameter.
-#
-# When set to `None`, URL launching will be disabled completely.
-#
-# Default:
-#   - (macOS) open
-#   - (Linux/BSD) xdg-open
-#   - (Windows) explorer
-#launcher:
-#  program: xdg-open
-#  args: []
-# URL modifiers
-#
-# These are the modifiers that need to be held down for opening URLs when clicking
-# on them. The available modifiers are documented in the key binding section.
-#modifiers: None
+cursor:
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Underline
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  #unfocused_hollow: true
+  # Live config reload (changes require restart)
+  #live_config_reload: true
+  # Shell
+  #
+  # You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
+  # Entries in `shell.args` are passed unmodified as arguments to the shell.
+  #
+  # Default:
+  #   - (macOS) /bin/bash --login
+  #   - (Linux/BSD) user login shell
+  #   - (Windows) powershell
+  #shell:
+  #  program: /bin/bash
+  #  args:
+  #    - --login
+  # Startup directory
+  #
+  # Directory the shell is started in. If this is unset, or `None`, the working
+  # directory of the parent process will be used.
+  #working_directory: None
+  # WinPTY backend (Windows only)
+  #
+  # Alacritty defaults to using the newer ConPTY backend if it is available,
+  # since it resolves a lot of bugs and is quite a bit faster. If it is not
+  # available, the the WinPTY backend will be used instead.
+  #
+  # Setting this option to `true` makes Alacritty use the legacy WinPTY backend,
+  # even if the ConPTY backend is available.
+  #winpty_backend: false
+  # Send ESC (\x1b) before characters when alt is pressed.
+  #alt_send_esc: true
+  #debug:
+  # Display the time it takes to redraw each frame.
+  #render_timer: false
+  # Keep the log file after quitting Alacritty.
+  #persistent_logging: false
+  # Log level
+  #
+  # Values for `log_level`:
+  #   - None
+  #   - Error
+  #   - Warn
+  #   - Info
+  #   - Debug
+  #   - Trace
+  #log_level: Warn
+  # Print all received window events.
+  #print_events: false
+  # Record all characters and escape sequences as test data.
+  #ref_test: false
+  #mouse:
+  # Click settings
+  #
+  # The `double_click` and `triple_click` settings control the time
+  # alacritty should wait for accepting multiple clicks as one double
+  # or triple click.
+  #double_click: { threshold: 300 }
+  #triple_click: { threshold: 300 }
+  # If this is `true`, the cursor is temporarily hidden when typing.
+  #hide_when_typing: false
+  #url:
+  # URL launcher
+  #
+  # This program is executed when clicking on a text which is recognized as a URL.
+  # The URL is always added to the command as the last parameter.
+  #
+  # When set to `None`, URL launching will be disabled completely.
+  #
+  # Default:
+  #   - (macOS) open
+  #   - (Linux/BSD) xdg-open
+  #   - (Windows) explorer
+  #launcher:
+  #  program: xdg-open
+  #  args: []
+  # URL modifiers
+  #
+  # These are the modifiers that need to be held down for opening URLs when clicking
+  # on them. The available modifiers are documented in the key binding section.
+  #modifiers: None
+
 # Mouse bindings
 #
 # Mouse bindings are specified as a list of objects, much like the key
@@ -673,3 +674,9 @@ key_bindings:
       action: ScrollToBottom,
       mode: ~Alt
     }
+
+shell:
+   program: /usr/bin/fish
+   args:
+      - -c
+      - neofetch && exec fish
